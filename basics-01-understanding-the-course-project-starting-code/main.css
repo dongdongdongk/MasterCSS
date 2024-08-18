@@ -4,10 +4,14 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+    margin: 0px;
 }
 
 #product-overview {
     background: #ff1b68;
+    width: 50%;
+    height: 100%;
+
 }
 
 
