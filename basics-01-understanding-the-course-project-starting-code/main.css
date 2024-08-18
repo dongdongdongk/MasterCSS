@@ -12,8 +12,6 @@ body {
     width: 100%;
     height: 528px;
     padding: 10px;
-    border: 5px solid black;
-    margin: 10px;
 }
 
 
@@ -29,4 +27,54 @@ body {
 
 h1 {
     font-family: sans-serif;
+}
+
+.main-header {
+    width: 100%;
+    background: #2ddf5c;
+    padding: 8px 16px;
+}
+
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand {
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 80px);
+    vertical-align: middle;
+}
+
+.main-nav_item {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.main-nav_item {
+    display:  inline-block;
+    margin: 0 16px;
+}
+
+.main-nav_item a {
+    text-decoration: none;
+    color: #0e4f1f;
+}
+
+.main-nav_item a:hover {
+    color: white;
+}
+
+.main-nav_item a:active {
+    color: white;
 }
