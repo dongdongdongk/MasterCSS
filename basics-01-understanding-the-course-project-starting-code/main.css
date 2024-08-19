@@ -1,11 +1,3 @@
-* {
-    box-sizing: border-box;
-  }
-
-body {
-    font-family: "Montserrat", sans-serif;
-    margin: 0px;
-}
 
 #product-overview {
     /* background: #ff1b68; */
@@ -71,92 +63,39 @@ body {
 .plan__features li {
     margin: 8px;
 }
-.button {
-    background: #0e4f1f;
+
+#key-features {
+    background: #ff1b68;
+    margin-top: 80px;
+    padding: 16px;
+}
+#key-features .section-title {
     color: white;
-    font: inherit;
-    border: 1.5px solid #023121;
-    padding: 8px;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
+    margin: 32px;
 }
-
-.button:hover,
-.button:active {
-    background: white;
-    color: #0e4f1f;
-}
-
-.button:focus {
-    outline: none;
-}
-
-h1 {
-    font-family: sans-serif;
-}
-
-.main-header {
-    width: 100%;
-    background: #2ddf5c;
-    padding: 8px 16px;
-}
-
-.main-header > div {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.main-header__brand {
-    color: #0e4f1f;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 22px;
-}
-
-.main-nav {
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 80px);
-    vertical-align: middle;
-}
-
-.main-nav_item {
-    padding: 0;
-    margin: 0;
+.key-feature__list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.key-feature {
     display: inline-block;
+    width: 30%;
+    vertical-align: top;
 }
-
-.main-nav_item {
-    display:  inline-block;
-    margin: 0 16px;
+.key-feature__image {
+    background: #ffcede;
+    width: 128px;
+    height: 128px;
+    border: 2px;
+    border-radius: 50%;
+    margin: auto;
 }
-
-.main-nav_item a {
-    text-decoration: none;
-    color: #0e4f1f;
+.key-feature__description {
+    text-align: center;
     font-weight: bold;
-    padding: 3px 0;
-}
-
-.main-nav_item a:hover,
-.main-nav_item a:active {
     color: white;
-    border-bottom: 5px solid white;
+    font-size: 20px;
 }
 
-.main-nav_item--cta a{
-    color: white;
-    background: red;
-    padding: 8px 16px;
-    border-radius: 10px;
-}
-
-.main-nav_item--cta a:hover,
-.main-nav_item--cta a:active {
-    color: red;
-    background: white;
-    border: none;
-
-}
