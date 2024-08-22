@@ -5,8 +5,10 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    margin: 0px;
+    margin: 0;
 }
+
+
 
 .button {
     background: #0e4f1f;
@@ -28,6 +30,8 @@ body {
 .button:focus {
     outline: none;
 }
+
+
 .main-header {
     width: 100%;
     background: #2ddf5c;
@@ -101,8 +105,8 @@ body {
 }
 .main-footer {
     background: black;
-    padding: 32px;
-    margin-top: 48px;
+    padding: 2rem;
+    margin-top: 3rem;
 }
 .main-footer__links {
     list-style: none;
@@ -112,7 +116,7 @@ body {
 }
 .main-footer__link {
     display: inline-block;
-    margin: 16px;
+    margin: 0 1rem;
 }
 
 .main-footer__link a {
