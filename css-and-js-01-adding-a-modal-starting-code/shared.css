@@ -26,6 +26,9 @@ body {
     background: #2ddf5c;
     padding: 0.5rem 1rem;
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main-header>div {
@@ -37,10 +40,9 @@ body {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    /* font-size: 1.5rem; */
     height: 2.5rem;
-    /* width: 20px; */
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
 .main-header__brand img {
@@ -49,20 +51,20 @@ body {
 }
 
 .main-nav {
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 74px);
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
 }
 
 .main-nav__items {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex; /* 플렉스박스 레이아웃 */
 }
 
 .main-nav__item {
-    display: inline-block;
     margin: 0 1rem;
 }
 
@@ -182,6 +184,7 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     vertical-align: middle;
+    display: none; /* 기본적으로 숨기기 */
 }
 
 .toggle-button:focus {
@@ -194,4 +197,24 @@ body {
     background: black;
     display: block;
     margin: 0.6rem 0;
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        display: none; /* 작은 화면에서는 내비게이션 메뉴 숨기기 */
+    }
+
+    .toggle-button {
+        display: block; /* 작은 화면에서는 토글 버튼 표시 */
+        margin-right: auto; /* 왼쪽 끝으로 정렬 */
+        text-align: left;
+    }
+
+    .main-header {
+        justify-content: flex-start; /* 작은 화면에서는 모든 요소를 왼쪽으로 정렬 */
+    }
+
+    .main-header__brand {
+        margin-right: auto; /* 작은 화면에서 로고와 토글 버튼을 분리 */
+    }
 }
