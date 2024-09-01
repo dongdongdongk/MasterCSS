@@ -7,24 +7,24 @@
         "header header header header"
         "side side main main"
         "footer footer footer footer";
+    justify-items: center;
 }
 
-.el1 {
+/* .el1 {
     background: rgba(255, 154, 72, 0.5);
-}
+} */
 
 .el2 {
     background: rgba(255, 0, 0, 0.5);
+    grid-area: main; /* 'main' 영역에 배치 */
 }
 
 .el3 {
     background: rgba(0, 128, 0, 0.5);
-    grid-column-start: 2;
-    grid-column-end: span 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-area: header; /* 'header' 영역에 배치 */
 }
 
 .el4 {
     background: rgba(0, 4, 255, 0.5);
+    grid-area: footer; /* 'footer' 영역에 배치 */
 }
